@@ -4,13 +4,17 @@
   "description": "메이플스토리m 씨앗 길드 챗봇",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "node dist/server.js",
     "build": "tsc -p .",
-    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/app.ts"
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/server.ts"
   },
   "author": "zubetcha",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.15"
+  },
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^18.16.3",
